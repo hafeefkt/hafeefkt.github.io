@@ -1,0 +1,25 @@
+body{
+    margin:0;
+    header{
+        position: absolute;
+        background: #ccc;
+        width: 300px;
+        height: 100vh;
+        top: 0;
+        left:0;
+        bottom: 0;
+        section.personal-info{
+            text-align: center;
+            .my-photo{
+                .my-photo-wrap{
+                    img{
+                        border-radius: 50%;
+                    }
+                }
+            }
+            h2{
+                text-transform: uppercase;
+            }
+        }
+    }
+}
