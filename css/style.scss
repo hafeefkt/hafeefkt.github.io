@@ -1,25 +1,112 @@
+//Variables
+$colorA: #000229;
+
+
 body{
     margin:0;
+    font-family: 'Crimson Text', serif;
     header{
-        position: absolute;
-        background: #ccc;
+        position: fixed;
+        background: $colorA;
         width: 300px;
         height: 100vh;
         top: 0;
         left:0;
         bottom: 0;
+        -webkit-box-shadow: 1px 0px 12px -1px rgba(0,0,0,0.33);
+        -moz-box-shadow: 1px 0px 12px -1px rgba(0,0,0,0.33);
+        box-shadow: 1px 0px 12px -1px rgba(0,0,0,0.33);
         section.personal-info{
-            text-align: center;
             .my-photo{
+              text-align: center;
                 .my-photo-wrap{
                     img{
                         border-radius: 50%;
                     }
                 }
             }
-            h2{
-                text-transform: uppercase;
+            .name-desig{
+              text-align: center;
+              h2{
+                  text-transform: uppercase;
+                  color: #fff;
+              }
+              h4{
+                color: #fff;
+              }
             }
+            .menu{
+              padding-top: 60px;;
+              ul.main-nav{
+                margin-right: 40px;
+                li{
+                  transition: 0.6s;
+                  padding: 10px 10px;
+                  border-bottom: 1px solid rgba(255, 255, 255, 0.5);                    
+                  a{
+                    color: rgba(255, 255, 255, 0.705);
+                    text-transform: uppercase;
+                    transition: 0.6s;
+                    font-size: 18px;
+                    letter-spacing: 1px;                                  
+                  }
+                  &:before{
+                    content: "\f178";
+                    display: inline-block;
+                    font: normal normal normal 14px/1 FontAwesome;
+                    font-size: inherit;
+                    text-rendering: auto;
+                    -webkit-font-smoothing: antialiased;
+                    color: rgba(255, 255, 255, 0.705);
+                    margin-right: 15px;
+                  }
+                  &:hover{
+                    a{
+                      color: #fff;
+                      text-decoration: none;
+                    }
+                    &:before{
+                      color: #fff;
+                    }                    
+                  }
+                }
+              }
+            }
+            .contact{
+              text-align: center;
+              padding-top: 90px;
+              h4{
+                color: #fff;
+                text-transform: uppercase;
+              }
+              a{
+                color: rgba(255, 255, 255, 0.705);
+                font-size: 16px;
+              }
+            }
+            .cv{
+              text-align: center;
+              margin-top: 90px;
+              a{
+              background: #ccc; 
+              padding: 10px 35px;
+              color: #000;
+              transition: 0.69s;
+                &:hover{
+                  text-decoration: none;
+                  background: #000;
+                  color: #fff;
+                }
+              } 
+          }            
         }
+    }
+    section.main{
+      margin-left: 330px;
+      padding: 40px;
+      article{
+        min-height: 100vh;
+        padding-top: 20px;
+      }
     }
 }

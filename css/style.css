@@ -1,18 +1,21 @@
 body {
   margin: 0;
+  font-family: 'Crimson Text', serif;
 }
 
 body header {
-  position: absolute;
-  background: #ccc;
+  position: fixed;
+  background: #000229;
   width: 300px;
   height: 100vh;
   top: 0;
   left: 0;
   bottom: 0;
+  -webkit-box-shadow: 1px 0px 12px -1px rgba(0, 0, 0, 0.33);
+  box-shadow: 1px 0px 12px -1px rgba(0, 0, 0, 0.33);
 }
 
-body header section.personal-info {
+body header section.personal-info .my-photo {
   text-align: center;
 }
 
@@ -20,7 +23,104 @@ body header section.personal-info .my-photo .my-photo-wrap img {
   border-radius: 50%;
 }
 
-body header section.personal-info h2 {
+body header section.personal-info .name-desig {
+  text-align: center;
+}
+
+body header section.personal-info .name-desig h2 {
   text-transform: uppercase;
+  color: #fff;
+}
+
+body header section.personal-info .name-desig h4 {
+  color: #fff;
+}
+
+body header section.personal-info .menu {
+  padding-top: 60px;
+}
+
+body header section.personal-info .menu ul.main-nav {
+  margin-right: 40px;
+}
+
+body header section.personal-info .menu ul.main-nav li {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  padding: 10px 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+body header section.personal-info .menu ul.main-nav li a {
+  color: rgba(255, 255, 255, 0.705);
+  text-transform: uppercase;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+body header section.personal-info .menu ul.main-nav li:before {
+  content: "\f178";
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  color: rgba(255, 255, 255, 0.705);
+  margin-right: 15px;
+}
+
+body header section.personal-info .menu ul.main-nav li:hover a {
+  color: #fff;
+  text-decoration: none;
+}
+
+body header section.personal-info .menu ul.main-nav li:hover:before {
+  color: #fff;
+}
+
+body header section.personal-info .contact {
+  text-align: center;
+  padding-top: 90px;
+}
+
+body header section.personal-info .contact h4 {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+body header section.personal-info .contact a {
+  color: rgba(255, 255, 255, 0.705);
+  font-size: 16px;
+}
+
+body header section.personal-info .cv {
+  text-align: center;
+  margin-top: 90px;
+}
+
+body header section.personal-info .cv a {
+  background: #ccc;
+  padding: 10px 35px;
+  color: #000;
+  -webkit-transition: 0.69s;
+  transition: 0.69s;
+}
+
+body header section.personal-info .cv a:hover {
+  text-decoration: none;
+  background: #000;
+  color: #fff;
+}
+
+body section.main {
+  margin-left: 330px;
+  padding: 40px;
+}
+
+body section.main article {
+  min-height: 100vh;
+  padding-top: 20px;
 }
 /*# sourceMappingURL=style.css.map */
